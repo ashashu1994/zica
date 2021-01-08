@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aura</title>
+	<!-- FAVICON LINK -->
+	<!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
+	<!-- STYLESHEETS -->
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<!-- FONT AWESOME -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-animation.min.css" /> -->
+	<!-- MAGNIFIC LIGHT BOX -->
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	<!-- CAROUSEL STYLE LINK -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
+	<style>
+		p {
+			/* border-bottom:1px dotted #d8d8d8; */
+			padding-bottom: 15px;
+			font-size: 17px
+		}
+
+		.preheader {
+			position: relative;
+		}
+
+		.preheader,
+		.topbar.navbar-default {
+			height: 70px;
+			background-color: #F84A01;
+			z-index: 1;
+		}
+
+		.logo-image-1,
+		.logo-image {
+			background: #fff;
+			padding: 10px 15px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+			border-radius: 0 0 10px 10px;
+		}
+
+		.logo-image-1 img,
+		.logo-image img {
+			width: 140px;
+		}
+
+		.preheader-div img {
+			width: 24px;
+			margin-top: -4px;
+		}
+
+		.preheader-div p {
+			padding-bottom: 0;
+		}
+
+		.navbar-right {
+			margin-bottom: 22px;
+			margin-top: 23px;
+		}
+
+		.topbar.navbar-default .navbar-right {
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+
+		#slider {
+			position: fixed;
+			right: -260px;
+			top: 140px;
+			z-index: 1000;
+			width: 295px;
+		}
+
+		#header h2 {
+			font-size: 20px;
+		}
+
+		#header p {
+			font-size: 12px;
+			line-height: 16px;
+			margin-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		#header {
+			width: 260px;
+			position: absolute;
+			right: 0;
+			border: 1px solid #d8d8d8;
+			padding: 20px 20px;
+			border-radius: 0;
+			background: #fff;
+			float: left;
+		}
+
+		.open_btn,
+		.close_btn {
+			float: left;
+			width: 34px;
+			background: #333;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			text-transform: uppercase;
+			font-weight: bold;cursor: pointer;
+		}
+
+		h3 {
+			font-family: 'Roboto Slab', serif
+		}
+
+		input[type=text] {
+			margin-top: 5px;
+			padding: 6px;
+			width: 100%;
+			font-size: 15px;
+			border-radius: 2px;
+			border: 1px solid #ddd
+		}
+
+		h4 {
+			font-size: 15px
+		}
+		#header h4{margin-top: 5px;}
+		div#title {
+			position: absolute;
+			top: 300px;
+			left: 650px
+		}
+
+		select {
+			padding: 6px;
+			width: 100%;
+			font-size: 15px;
+			border-radius: 2px;
+			border: 1px solid #ddd
+		}
+
+		textarea {
+			padding: 6px;
+			font-size: 15px;
+			border-radius: 2px;
+			border: 1px solid #ddd;
+			margin-top: 10px;
+			width: 100%
+		}
+
+		#header button {
+			background: #F84A01;
+			color: #fff;
+			border: 2px solid #f84a01;
+			width: 100%;
+			font-size: 18px;
+			padding: 8px 0;
+			border-radius: 0px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+
+		#header button:hover {
+			color: #F84A01;
+			border: 2px solid #f84a01;
+			background-color: transparent;
+		}
+
+		.button-one,
+		.button-two,
+		.button-three {
+			text-align: center;
+			cursor: pointer;
+			font-size: 24px;
+			margin: 0 0 0 100px;
+		}
+
+		/*Button Two*/
+		.button-two {
+			border-radius: 4px;
+			background-color: #d35400;
+			border: none;
+			padding: 20px;
+			width: 200px;
+			transition: all 0.5s;
+		}
+
+
+		.button-two span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+
+		.button-two span:after {
+			content: '»';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+
+		.button-two:hover span {
+			padding-right: 25px;
+		}
+
+		.button-two:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+	</style>
+	<!-- Sliding div starts here -->
+	<div id="slider">
+		<div class="open_btn">E<br />n<br />q<br />u<br />i<br />r<br />y
+		</div>
+		<div class="close_btn">E<br />n<br />q<br />u<br />i<br />r<br />y
+		</div>
+		<div id="header">
+			<h2>Contact Us</h2>
+			<input name="dname" type="text" placeholder="Your Name">
+			<input name="demail" type="text" placeholder="Your Email">
+			<h4>Query type</h4>
+			<select>
+				<option>General Query</option>
+				<option>Presales</option>
+				<option>Technical</option>
+				<option>Others</option>
+			</select>
+			<textarea rows="2" placeholder="Message"></textarea>
+			<button>Send Message</button>
+		</div>
+	</div>
+	<!-- Sliding div ends here -->
+	<!-- PAGE LAYOUT STARTS HERE -->
+	<!--================================= PREHEADR START ==========================================-->
+	<div class="preheader">
+		<div class="container-fluid">
+			<div class="logo-image-1">
+				<a href="#"><img src="img/logo.png" alt="Logo" /></a>
+			</div>
+			<div class="navbar-right">
+				<ul class="preheader-div text-center">
+					<li>
+						<img src="img/32x32x5.png" alt="32x32x5" />
+					</li>
+					<li>
+						<p class="content-spacing text-white">+91-9483600001</p>
+					</li>
+				</ul>
+				<ul class="preheader-div preheader-div-1 text-center">
+					<li>
+						<img src="img/32x32x6.png" alt="32x32x6" />
+					</li>
+					<li>
+						<p class="content-spacing "><a href="mailto:zicamwm@gmail.com"
+								class="text-white">zicamwm@gmail.com</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--================================= PREHEADR END ==========================================-->
+	<!--=================================  NAVIGATION-2 START ==========================================-->
+	<header>
+		<nav class="topbar navbar navbar-default navbar-fixed-top clearfix" id="top-nav">
+			<div class="container-fluid">
+				<div class="">
+					<div class="logo-image">
+						<a href="#"><img src="img/logo.png" alt="Logo" /></a>
+					</div>
+					<div class="navbar-right icon-header nav">
+						<ul class="content-ul header-icon text-center">
+							<li>
+								<a href="#"><img src="img/32x32x1.png" alt="32x32x1" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/32x32x2.png" alt="32x32x2" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/32x32x3.png" alt="32x32x3" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/32x32x4.png" alt="32x32x4" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+	<!--=================================  NAVIGATION-2 ENDS ============================================-->
+	<!--=================================  HEADER-1 START ==========================================-->
+	<div class="header-bgimage-2 bgimage-property" id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-7 header-div-2">
+					<h1 class="wow fadeInLeft"><span>ZEE</span> LEARN</h1>
+					<p class="header-content wow fadeInUp" data-wow-delay="1s">We are India’s leading company in
+						education segment with the fastest
+						growing chain of K-12 schools – Mount Litera Zee School and Asia’s No 1 chain of pre-school
+						network – Kidzee in its portfolio.
+					</p>
+					<a href="#features" class="btn btn-1 wow fadeInUp" data-wow-delay="1.1s">Read More</a>
+				</div>
+				<div class="col-sm-6 col-md-5">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================================= HEADER-1 ENDS ============================================-->
+	<!--================================= HEADER STRIP START ==========================================-->
+	<!-- <section class="theme-bg strip-padding">
+		<div class="container">
+			<div class="row strip-row">
+				<div class="col-xs-12 col-sm-9 col-md-8 strip-col onecolumn-res text-left">
+					<ul class="list-ul content-ul">
+						<li class="content-li">
+							<div class="list-div">
+								<div class="list-div-left">
+									<img src="img/48x48x1.png" alt="48x48x1" />
+								</div>
+								<div class="list-div-body">
+									<h3>Get Free Consultation</h3>
+									<p>Aenean arcu viverra varius sodales sociosqu torquent.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-4 strip-col-1 text-center">
+					<a href="#" class="btn btn-2">Find Courses</a>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================================= HEADER STRIP ENDS ==========================================-->
+	<!--================================= WHO WE ARE START ==========================================-->
+	<section class="section-padding section-1-bg bg-light-bg" id="features">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="wow fadeInUp">ABOUT US</h2>
+				<h4 class="heading-sub-heading wow fadeInUp" data-wow-delay="0.5s">WELCOME TO ZICA MALLESHWARAM
+					ANIMATION INSTITUTE IN BANGALORE.</h4>
+				<p class="wow fadeInUp sdfsdf" data-wow-delay="1s">Zee Institute Of Creative Art Malleshwaram is India’s
+					1<sup>st</sup> full-fledged Classical and
+					Digital
+					institute in Bangalore. ZICA as a brand started its journey 21 yrs back in Bangalore. ZICA is the
+					brainchild of the Chairman of Zee Group Shri Subhash Chandra ji who is also known as
+					the Media Baron of India.</p>
+			</div>
+		</div>
+	</section>
+	<!--================================= WHO WE ARE ENDS ==========================================-->
+	<!--================================= WHY WE ARE START ==========================================-->
+	<!-- <section class="section-2-bg">
+		<div class="business3-bgimage bgimage-property"></div>
+		<div class="business3-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-push-6 col-sm-6 business2-col">
+						<h3>Why We Are</h3>
+						<p class="content-top-space">Donec varius sodales orci. Class aptent taciti sociosqu torquent,
+							per inceptos himenaeos. End of content.
+							Donec varius sodales orci. Class aptent taciti sociosqu torquent, per inceptos himenaeos.
+						</p>
+						<div class="business-list-div">
+							<ul class="why-are-ul">
+								<li><img src="img/20x20x1.png" alt="20x20x1" /></li>
+								<li>
+									<p class="content-spacing">Donec varius sodales ullamcorper inceptos.</p>
+								</li>
+							</ul>
+							<ul class="why-are-ul">
+								<li><img src="img/20x20x1.png" alt="20x20x1" /></li>
+								<li>
+									<p class="content-spacing">Class aptent taciti, per inceptos himenaeos.</p>
+								</li>
+							</ul>
+							<ul class="why-are-ul">
+								<li><img src="img/20x20x1.png" alt="20x20x1" /></li>
+								<li>
+									<p class="content-spacing">Aenean arcu viverra varius sodales orci.</p>
+								</li>
+							</ul>
+							<ul class="why-are-ul">
+								<li><img src="img/20x20x1.png" alt="20x20x1" /></li>
+								<li>
+									<p class="content-spacing">Sociosqu torquent himenaeos, End of content.</p>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="btn btn-1">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================================= WHY WE ARE ENDS ==========================================-->
+	<!--================================= SERVICES START ==========================================-->
+	<section class="section-padding section-1-bg" id="services">
+		<img src="img/shape1.png" alt="" class="shape1" />
+		<div class="container">
+			<div class="heading-div-1 text-center">
+				<h2 class="wow fadeInUp">Our Courses</h2>
+			</div>
+			<div class="row custom-row">
+				<div class="col-sm-6 col-md-4 services-col services-col-space-1 text-center section-space">
+					<div class="services-div services-div11 wow fadeInUp" data-wow-delay="0.1s">
+						<img src="img/64x64x4.png" alt="64x64x4" class="image-bottom-space" />
+						<h4><a href="#">PDP 3D ANIMATION VISUAL EFFECTS</a></h4>
+						<p class="content-top-space">This unique program is focused on 3D Animation Visual Effects, wherein every student will create a short film during the course.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 services-col services-col-space-1 text-center section-space">
+					<div class="services-div services-div12  wow fadeInUp" data-wow-delay="0.2s">
+						<img src="img/64x64x5.png" alt="64x64x5" class="image-bottom-space" />
+						<h4><a href="#">PROFESSIONAL PROGRAM IN 3D ANIMATION</a></h4>
+						<p class="content-top-space">This program has been designed to deal with Filmmaking by using Live Action, 3D Animation & Visual Effects. The first module deals with Fundamentals of Art, Design & Composition.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 services-col services-col-space-1 text-center section-space">
+					<div class="services-div services-div13  wow fadeInUp" data-wow-delay="0.3s">
+						<img src="img/64x64x6.png" alt="64x64x6" class="image-bottom-space" />
+						<h4><a href="#">PDP IN FILMMAKING VISUAL EFFECTS</a></h4>
+						<p class="content-top-space">This course has been developed to provide knowledge in 3D animation. It covers fundamentals of art, design and animation principles.</p>
+					</div>
+				</div>
+				<div
+					class="col-sm-6 col-md-4 services-col services-top-space services-col-space-1 text-center section-space">
+					<div class="services-div services-div14   wow fadeInUp" data-wow-delay="0.4s">
+						<img src="img/64x64x7.png" alt="64x64x7" class="image-bottom-space" />
+						<h4><a href="#">PROFESSIONAL PROGRAM IN VISUAL EFFECTS</a></h4>
+						<p class="content-top-space">This program has been designed to deal with Filmmaking by using Live Action, 3D Animation & Visual Effects. The first module deals with Fundamentals of Art, Design & Composition.</p>
+					</div>
+				</div>
+				<div
+					class="col-sm-6 col-md-4 services-col services-top-space services-col-space-1 text-center section-space">
+					<div class="services-div services-div15  wow fadeInUp" data-wow-delay="0.5s">
+						<img src="img/64x64x8.png" alt="64x64x8" class="image-bottom-space" />
+						<h4><a href="#">PROFESSIONAL PROGRAM IN GRAPHIC DESIGN</a></h4>
+						<p class="content-top-space">We have not made any changes in the Graphic Design Program. We have replaced Adobe Flash with Adobe Animate as changed by the principle. Introduction of AR & VR.</p>
+					</div>
+				</div>
+				<div
+					class="col-sm-6 col-md-4 services-col services-top-space services-col-space-1 text-center section-space">
+					<div class="services-div services-div16   wow fadeInUp" data-wow-delay="0.6s">
+						<img src="img/64x64x9.png" alt="64x64x9" class="image-bottom-space" />
+						<h4><a href="#">PROGRAM IN GRAPHIC & WEB DESIGN</a></h4>
+						<p class="content-top-space">We have replaced Action Script part of animate CC with HTML5 Compatible Designs. This will help the students with Animated Banner Designing. We have removed AJAX and introducing Adobe XD and Adobe Muse.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================= SERVICES ENDS ==========================================-->
+	<!--================================= COUNTER START ==========================================-->
+	<div class="counter-bgimage bgimage-property">
+		<div class="container">
+			<div class="row counter-div">
+				<div class="col-xs-6 col-sm-3 text-center counter-space">
+					<img src="img/64x64x10.png" alt="64x64x10" class="image-bottom-space" />
+					<p class="counter-value"><span class="count">10</span></p>
+					<p class="counter-title">YRS OF EXISTANCE</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 text-center counter-space">
+					<img src="img/64x64x11.png" alt="64x64x11" class="image-bottom-space" />
+					<p class="counter-value"><span class="count">650</span>+</p>
+					<p class="counter-title">STUDENTS PLACED</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 text-center">
+					<img src="img/64x64x12.png" alt="64x64x12" class="image-bottom-space" />
+					<p class="counter-value"><span class="count">100</span>+</p>
+					<p class="counter-title">COMPANIES CONNECT</p>
+				</div>
+				<div class="col-xs-6 col-sm-3 text-center">
+					<img src="img/64x64x13.png" alt="64x64x13" class="image-bottom-space" />
+					<p class="counter-value"><span class="count">15</span>+</p>
+					<p class="counter-title" style=="padding-top:13px">AWARDS</p>
+				</div>
+			</div>
+			<!-- <div class="counter-div-1">
+				<h4><a href="#">Our Strategies</a></h4>
+				<p class="content-top-space">Donec varius sodales orci. Class aptent taciti sociosqu torquent, per
+					inceptos himenaeos. End of content.
+					Donec varius sodales orci. Class aptent taciti sociosqu torquent, per inceptos himenaeos.
+				</p>
+				<div class="business-list-div counter-points">
+					<ul class="why-are-ul">
+						<li><img src="img/20x20x2.png" alt="20x20x2" /></li>
+						<li>
+							<p class="content-spacing">Donec varius sodales ullamcorper inceptos.</p>
+						</li>
+					</ul>
+					<ul class="why-are-ul why-are-ul-1">
+						<li><img src="img/20x20x2.png" alt="20x20x2" /></li>
+						<li>
+							<p class="content-spacing">Class aptent taciti, per inceptos himenaeos.</p>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!--================================= COUNTER ENDS ==========================================-->
+	
+	<!--================================= PRICE TABLE-1 START ==========================================-->
+	<!-- <section class="section-padding section-1-bg" id="pricing">
+		<div class="container">
+			<div class="heading-div-1 text-center">
+				<h2>Our Pricing</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 price-table1-col section-respadding">
+					<div class="price-inner">
+						<div class="price-table1-bg text-center">
+							<h4>Basic</h4>
+							<p class="price-table1-price">$30 / <span>yr</span></p>
+							<ul class="price-table1-content content-ul">
+								<li>
+									<p class="content-spacing price-table1-gray">Download SDK </p>
+								</li>
+								<li>
+									<p class="content-spacing">24/7 Support </p>
+								</li>
+								<li>
+									<p class="content-spacing price-table1-gray">Update Priority</p>
+								</li>
+								<li>
+									<p class="content-spacing price-table1-gray">Adds Free </p>
+								</li>
+								<li>
+									<p class="content-spacing price-table1-gray">Support Priority</p>
+								</li>
+							</ul>
+							<div class="pricing1-btn">
+								<a href="#" class="btn btn-1">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 price-table1-col section-respadding">
+					<div class="price-inner">
+						<div class="price-table1-bg text-center">
+							<h4>Business</h4>
+							<p class="price-table1-price">$70 / <span>yr</span></p>
+							<ul class="price-table1-content content-ul">
+								<li>
+									<p class="content-spacing">Download SDK </p>
+								</li>
+								<li>
+									<p class="content-spacing">24/7 Support </p>
+								</li>
+								<li>
+									<p class="content-spacing">Update Priority</p>
+								</li>
+								<li>
+									<p class="content-spacing">Adds Free </p>
+								</li>
+								<li>
+									<p class="content-spacing price-table1-gray">Support Priority</p>
+								</li>
+							</ul>
+							<div class="pricing1-btn">
+								<a href="#" class="btn btn-1">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 price-table1-col">
+					<div class="price-inner">
+						<div class="price-table1-bg text-center">
+							<h4>Premium</h4>
+							<p class="price-table1-price">$130 / <span>yr</span></p>
+							<ul class="price-table1-content content-ul">
+								<li>
+									<p class="content-spacing">Download SDK </p>
+								</li>
+								<li>
+									<p class="content-spacing">24/7 Support </p>
+								</li>
+								<li>
+									<p class="content-spacing">Update Priority</p>
+								</li>
+								<li>
+									<p class="content-spacing">Adds Free </p>
+								</li>
+								<li>
+									<p class="content-spacing">Support Priority</p>
+								</li>
+							</ul>
+							<div class="pricing1-btn">
+								<a href="#" class="btn btn-1">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================================= PRICE TABLE-1 ENDS ==========================================-->
+	<!--================================= TEAM START ==========================================-->
+	<!-- <section class="section-padding section-2-bg">
+		<div class="container">
+			<div class="heading-div-1 text-center">
+				<h2>Our Team</h2>
+			</div>
+			<div class="row team-row">
+				<div class="col-xs-4 col-sm-4 col-md-4 text-center team-col-1 section-respadding onecolumn-res">
+					<div class="team-col">
+						<img src="img/360x300x1.jpg" alt="360x300x1" class="img-responsive image-bottom-space" />
+						<ul class="content-ul team-icon ">
+							<li><a href="#"><img src="img/30x30x1.png" alt="30x30x1" /></a></li>
+							<li><a href="#"><img src="img/30x30x2.png" alt="30x30x2" /></a></li>
+							<li><a href="#"><img src="img/30x30x3.png" alt="30x30x3" /></a></li>
+							<li><a href="#"><img src="img/30x30x4.png" alt="30x30x4" /></a></li>
+						</ul>
+						<h4>Lara Emily</h4>
+						<p>Developer</p>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 text-center team-col-1 section-respadding onecolumn-res">
+					<div class="team-col">
+						<img src="img/360x300x2.jpg" alt="360x300x2" class="img-responsive image-bottom-space" />
+						<ul class="content-ul team-icon ">
+							<li><a href="#"><img src="img/30x30x1.png" alt="30x30x1" /></a></li>
+							<li><a href="#"><img src="img/30x30x2.png" alt="30x30x2" /></a></li>
+							<li><a href="#"><img src="img/30x30x3.png" alt="30x30x3" /></a></li>
+							<li><a href="#"><img src="img/30x30x4.png" alt="30x30x4" /></a></li>
+						</ul>
+						<h4>Carol</h4>
+						<p>Designer</p>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 text-center team-col-2 onecolumn-res">
+					<div class="team-col">
+						<img src="img/360x300x3.jpg" alt="360x300x3" class="img-responsive image-bottom-space" />
+						<ul class="content-ul team-icon ">
+							<li><a href="#"><img src="img/30x30x1.png" alt="30x30x1" /></a></li>
+							<li><a href="#"><img src="img/30x30x2.png" alt="30x30x2" /></a></li>
+							<li><a href="#"><img src="img/30x30x3.png" alt="30x30x3" /></a></li>
+							<li><a href="#"><img src="img/30x30x4.png" alt="30x30x4" /></a></li>
+						</ul>
+						<h4>Peterson</h4>
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================================= TEAM ENDS ==========================================-->
+	<!--================================= SUBSCRIBE START ==========================================-->
+	<!-- <div class="section-padding section-1-bg subscribe">
+		<div class="container">
+			<div class="subscribe-section">
+				<h2>Subscribe For Newsletter </h2>
+				<div id="mc_embed_signup">
+					<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+						class="validate" novalidate>
+						<div class="row subscribe-row">
+							<div class="form1-div col-sm-4 col-md-4">
+								<input class="form-input" type="text" name="FNAME" value="" id="mce-FNAME"
+									placeholder="Please Enter Name">
+							</div>
+							<div class="form1-div col-sm-4 col-md-4">
+								<input class="form1-input" type="email" name="EMAIL" value="" id="mce-EMAIL"
+									placeholder="Please Enter Email">
+							</div>
+							<div class="form1-btn col-sm-4 col-md-4">
+								<input type="submit" class="btn btn-1 submit" name="subscribe"
+									id="mc-embedded-subscribe" value="Subscribe Now">
+							</div>
+							<div id="mce-responses">
+								<div class="response response-msg" id="mce-error-response"></div>
+								<div class="response response-msg" id="mce-success-response"></div>
+							</div>
+						</div>
+					</form>
+					<div id="ResultMsg"><span id="SuccessMsg"></span><span id="FailureMsg"></span></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- testimonial section -->
+	<div class="testi-sec">
+		<div class="container-fluid">
+			<div class="heading-div-1 text-center">
+				<h2>Testimonials</h2>
+			</div>
+			<div class="owl-carousel2 owl-theme">
+				<div class="item">
+					<div class="testimonial-card">
+						<div class="text"> For me, Life in ZICA has been breathtaking and enriching. The Environment not
+							only helped me in imbibing creativity but also in developing my overall personality and
+							confidence. My sincere thanks to Ashwini mam and all the faculty members who have played a
+							very crucial role in shaping me and proved me right in selecting zica. I will definitely
+							suggest everyone to pursue & tune their creative skills at ZICA <i
+								class="fas fa-quote-right quote"></i></div>
+						<div class="testimonial-footer">
+							<div class="image" style="background-image: url('img/testi2.jpg');">
+							</div>
+							<h3 class='person'>Srinidhi R</h3><p class="para-person">DAVFX</p>
+						</div>
+					</div>
+				</div><div class="item">
+					<div class="testimonial-card">
+						<div class="text"> First of all I would like to thank all the faculty members of ZICA for
+							preparing us for a competitive world. Secondly I had a very good experience studying in zica
+							I have learned a lot of things from this institute . Everyone is very helpful. <i
+								class="fas fa-quote-right quote"></i></div>
+						<div class="testimonial-footer">
+							<div class="image" style="background-image: url('img/testi3.jpg');">
+							</div>
+							<h3 class='person'>Pritom Dutta</h3><p class="para-person">ADFVX</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-card">
+						<div class="text"> I had a very good experience at ZICA, where I got to learn a lot about the
+							industry & about art in general which has helped me in reaching my goals.
+							<i class="fas fa-quote-right quote"></i>
+						</div>
+						<div class="testimonial-footer">
+							<div class="image" style="background-image: url('img/testi1.jpg');">
+							</div>
+							<h3 class='person'>Bhargava A J</h3>
+							<p class="para-person">Bs.c Animation & VFX</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-card">
+						<div class="text"> Enjoyed a Lot with Studying, Wonderful & friendly faculties and Learnt good
+							things. <i class="fas fa-quote-right quote"></i></div>
+						<div class="testimonial-footer">
+							<div class="image" style="background-image: url('img/testi4.jpg');">
+							</div>
+							<h3 class='person'>Likith N M</h3>
+							<p class="para-person">PDPVFX</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<!--================================= GALLERY START ==========================================-->
+	<div class="section-padding gallery-section" id="gallery">
+		<div class="container-fluid">
+			<div class="heading-div-1 text-center">
+				<h2>Our Works</h2>
+			</div>
+			<div class="row popup-gallery gallery-div">
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-space">
+					<div class="gallery-image">
+						<a href="img/gallery/1.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/1.jpg" alt="520x400x1" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-padding-1 gallery-space">
+					<div class="gallery-image">
+						<a href="img/gallery/2.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/2.jpg" alt="520x400x2" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-padding-2 gallery-space">
+					<div class="gallery-image">
+						<a href="img/gallery/3.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/3.jpg" alt="520x400x3" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-space">
+					<div class="gallery-image">
+						<a href="img/gallery/5.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/5.jpg" alt="520x400x4" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col">
+					<div class="gallery-image">
+						<a href="img/gallery/4.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/4.jpg" alt="520x400x5" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-padding-1">
+					<div class="gallery-image">
+						<a href="img/gallery/6.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/6.jpg" alt="520x400x6" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-padding-2 gallery-last">
+					<div class="gallery-image">
+						<a href="img/gallery/7.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/7.jpg" alt="520x400x7" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-6 gallery-col gallery-last">
+					<div class="gallery-image">
+						<a href="img/gallery/8.jpg" title="Gallery">
+							<div class="gallery-inner">
+								<img src="img/gallery/8.jpg" alt="520x400x8" class="img-responsive" />
+								<div class="gallery-caption">
+									<i class="fa fa-camera" aria-hidden="true"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================================= GALLERY ENDS ==========================================-->
+	<!--================================= SUBSCRIBE ENDS ==========================================-->
+	<!--================================= SPONSORS-4 START ==========================================-->
+	<div class="container-fluid">
+		<div class="heading-div-1 text-center">
+			<h2>Placement</h2>
+		</div>
+	</div>
+	<div class=" client-logo">
+		<div class="container-fluid">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<img src="img/logos/1.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/2.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/3.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/4.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/5.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/6.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/7.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/8.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/9.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/10.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/11.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/12.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/13.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/14.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/15.jpg" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/16.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/17.png" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/18.gif" alt="" />
+				</div>
+				<div class="item">
+					<img src="img/logos/19.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================================= SPONSORS-4 ENDS ==========================================-->
+	<!--================================= FOOTER-1 START ==========================================-->
+	<section class="section-padding footer-section-1" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-5 footer-col-1 section-space">
+					<a href="#"><img src="img/logo-footer.png" alt="250x100x1" /></a>
+					<p class="content-top-space">Zee Institute Of Creative Art Malleshwaram is India’s 1st full-fledged
+						Classical and Digital institute in Bangalore. ZICA as a brand started its journey 8 yrs back in
+						Bangalore.</p>
+				</div>
+				<div class="col-sm-6 col-md-5 col-md-offset-2 footer-col-3">
+					<h4>Contact Us</h4>
+					<div class="footer-div-3 text-center">
+						<div class="text-left">
+							<ul class="content-ul footer-address">
+								<li><img src="img/32x32x7.png" alt="32x32x7" /></li>
+								<li>
+									<p class="content-spacing">#141, 2nd Floor, Komarla Plaza, 3rd Main, 8th Cross Road,
+										Margosa Rd, Malleshwaram West, Bengaluru, Karnataka 560003</p>
+								</li>
+							</ul>
+							<ul class="content-ul footer-address footer-address-1">
+								<li><img src="img/32x32x8.png" alt="32x32x8" /></li>
+								<li>
+									<p class="content-spacing" style="padding-top: 5px;"><a
+											href="mailto:zicamwm@gmail.com">zicamwm@gmail.com</a> </p>
+								</li>
+							</ul>
+							<ul class="content-ul footer-address">
+								<li><img src="img/32x32x9.png" alt="32x32x94" /></li>
+								<li>
+									<p class="content-spacing"> 080-23462222<br />
+										+91-9483600001<br />
+										+91-9449706191</p>
+								</li>
+							</ul>
+						</div>
+						<ul class="content-ul footer-icon text-left">
+							<li>
+								<a href="#"><img src="img/40x40x1.png" alt="40x40x1" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/40x40x2.png" alt="40x40x2" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/40x40x3.png" alt="40x40x3" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/40x40x4.png" alt="40x40x4" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/40x40x5.png" alt="40x40x5" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================= FOOTER-1 ENDS ==========================================-->
+	<!--================================= COPYRIGHT START ==========================================-->
+	<footer class="copyright-1">
+		<div class="container copyright text-center">
+			<p>2021 &copy; All Rights Reserved</p>
+		</div>
+	</footer>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '142035144391079');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=142035144391079&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+	<!--================================= COPYRIGHT END ==========================================-->
+	<!-- JQUERY LIBRARY -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- SLIDER JS FILES -->
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/owl-slider.js"></script>
+	<!-- COUNTER JS FILES -->
+	<script type="text/javascript" src="js/counter-lib.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<!-- <script type="text/javascript" src="js/counter.js"></script> -->
+	<!-- MAGNIFIC LIGHT BOX -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<!-- SUBSCRIBE MAILCHIMP -->
+	<script type="text/javascript" src="js/subscribe_validate.js"></script>
+	<!-- FORM VALIDATION -->
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!-- THEME JS -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".open_btn").click(function () {
+				$(this).css("display", "none");
+				$(".close_btn").css("display", "block");
+				$("#slider").css("right", "0px");
+			})
+			$(".close_btn").click(function () {
+				$(this).css("display", "none");
+				$(".open_btn").css("display", "block");
+				$("#slider").css("right", "-260px");
+			})
+		})
+		new WOW().init();
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 10,
+			items: 7,
+			nav: true,
+			responsive: {
+				320: {
+					items: 3
+				},
+				600: {
+					items: 5
+				},
+				1000: {
+					items: 7
+				}
+			}
+		})
+		$('.owl-carousel2').owlCarousel({
+			loop: true,
+			margin: 10,
+			items: 3,
+			nav: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 2
+				},
+				1000: {
+					items: 3
+				}
+			}
+		})
+	</script>
+</body>
+
+</html>
