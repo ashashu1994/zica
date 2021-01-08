@@ -791,7 +791,10 @@ h6 {
 .counter-bgimage {
     padding-bottom: 15px;
     padding-top: 15px;
-    background-color: #68696d;
+    background: rgb(104,105,109);
+background: -moz-linear-gradient(left, rgba(104,105,109,1) 0%, rgba(206,206,198,1) 45%, rgba(206,206,198,1) 55%, rgba(104,105,109,1) 100%);
+background: -webkit-linear-gradient(left, rgba(104,105,109,1) 0%,rgba(206,206,198,1) 45%,rgba(206,206,198,1) 55%,rgba(104,105,109,1) 100%);
+background: linear-gradient(to right, rgba(104,105,109,1) 0%,rgba(206,206,198,1) 45%,rgba(206,206,198,1) 55%,rgba(104,105,109,1) 100%);
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
